@@ -23,6 +23,10 @@
       "dom"
     ],
     "paths": {
+      "prevent-scroll": [
+        "dist/prevent-scroll/ngx-prevent-scroll",
+        "dist/prevent-scroll"
+      ],
       "vh-style": [
         "dist/vh-style/ngx-vh-style",
         "dist/vh-style"

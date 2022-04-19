@@ -1,0 +1,23 @@
+{
+  "name": "prevent-scroll",
+  "version": "13.0.0",
+  "peerDependencies": {
+    "@angular/common": "^12.0.0",
+    "@angular/core": "^12.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": "Sérgio Carneiro <sergio.carneiro21@gmail.com>",
+  "keywords": [
+    "angular",
+    "angular2",
+    "typescript",
+    "directive",
+    "scroll"
+  ],
+  "bugs": {
+    "url": "https://github.com/sergiocarneiro/ngx/issues"
+  },
+  "homepage": "https://github.com/sergiocarneiro/ngx/projects/prevent-scroll#readme"
+}
