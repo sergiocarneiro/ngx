@@ -12,7 +12,9 @@
   },
   "author": "Sérgio Carneiro <sergio.carneiro21@gmail.com>",
   "keywords": [
+    "angular",
     "angular2",
+    "typescript",
     "directive",
     "styling",
     "responsive"
