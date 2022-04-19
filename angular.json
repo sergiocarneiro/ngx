@@ -1,7 +1,42 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a0d3cdee-5f72-4774-8fe5-0bab7ede65eb"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "vh-style": {
+      "projectType": "library",
+      "root": "projects/vh-style",
+      "sourceRoot": "projects/vh-style/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/vh-style/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/vh-style/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/vh-style/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/vh-style/src/test.ts",
+            "tsConfig": "projects/vh-style/tsconfig.spec.json",
+            "karmaConfig": "projects/vh-style/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "vh-style"
 }
